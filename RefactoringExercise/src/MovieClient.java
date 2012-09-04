@@ -10,12 +10,12 @@ public class MovieClient {
 		Movie aMovie= new Movie("Wall-E",2);
 		Rental aRental= new Rental(aMovie, 4);
 		aCustomer.addRental(aRental);
-		System.out.println(aCustomer.statement());
+		System.out.println(aCustomer.htmlStatement());
 		Movie anotherMovie= new Movie("Matrix", 0);
 		Movie onemoreMovie = new Movie("LRM", 1);
 		aCustomer.addRental(new Rental(anotherMovie, 6));
 		aCustomer.addRental(new Rental(onemoreMovie, 5));
-		System.out.println(aCustomer.statement());
+		System.out.println(aCustomer.htmlStatement());
 
 	}
 
